@@ -46,5 +46,17 @@ public class App {
      * 
      * checkBalance() is considered an non-static method because its static signature does not include the keyword static like the main method() does
      */
+
+    /*
+     * ---------------
+     * Calling Methods
+     * ---------------
+     * 
+     * When we add a non-static method to a class, it becomes available to use on an object of that class
+     * In order to execute our method, we must call/invoke the method on the object we created
+     * 
+     * Let's add a non-static method to our Car class
+     * Inside the main() method, we'll call startEngine() on the myFastCar object
+     */
   }
 }

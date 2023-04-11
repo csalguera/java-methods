@@ -1,6 +1,6 @@
 ## Java Methods
 
-## SavingsAccount
+## Introduction
 
 ```
 public class SavingsAccount {
@@ -57,7 +57,7 @@ Look at the main method! It’s so long! There is so much repeated code! Can you
 
 Throughout this lesson, we will learn how to make methods that would make checking the balance, depositing, and withdrawing all behavior that would take only one line of code.
 
-## Store
+## Defining Methods
 
 ```
 public class Store {
@@ -81,3 +81,35 @@ public class Store {
 In between the constructor and the main() method, add a method called advertise() to the Store class. It should be accessible by other classes, and should have no output.
 
 You can leave the body of the method empty.
+
+## Calling Methods
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+		System.out.println("Selling " + productType + "!");
+    System.out.println("Come spend some money!");
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    
+  }
+}
+```
+
+Last exercise, we defined a new method, `advertise()`, but we didn’t actually see it run.
+
+We now have a Store class with `advertise()` defined.
+
+Call the `advertise()` method on the `lemonadeStand` object in the `main()` method and see what the output is!
