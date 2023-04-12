@@ -1,13 +1,20 @@
 public class Car {
   String color;
+  int milesDriven;
   
   public Car(String carColor) {
     color = carColor;
+    milesDriven = 0;
   }
 
   public void startEngine() {
     System.out.println("Starting the car!");
     System.out.println("Vroom!");
+  }
+
+  public void drive() {
+    String message = "Miles driven: " + milesDriven;
+    System.out.println(message);
   }
 
   public static void main(String[] args) {
@@ -16,7 +23,13 @@ public class Car {
     // Call a method on an object
     myFastCar.startEngine();
     System.out.println("That was one fast car!");
+
+    myFastCar.drive();
     /*
+     * ---------------
+     * Calling Methods
+     * ---------------
+     * 
      * let's take a closer look at the method call:
      * myFastCar.startEngine();
      * 
@@ -36,6 +49,15 @@ public class Car {
      * Once all method instructions are executed, the top-down order of execution continues
      * 
      * This is why "Starting the car!" and "Vroom!" are outputted before "That was a fast car!"
+     * 
+     * -----
+     * Scope
+     * -----
+     * 
+     * The variable message, which is declared and initialized inside of drive, cannot be used inside of main()
+     * It only exists within the scope of the drive() method
+     * 
+     * However, milesDriven, which is declared at the top of the class, can be used inside all methods in the class, since it is in the scope of the whole class
      */
   }
 }

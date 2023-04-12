@@ -58,5 +58,21 @@ public class App {
      * Let's add a non-static method to our Car class
      * Inside the main() method, we'll call startEngine() on the myFastCar object
      */
+
+    /*
+     * -----
+     * Scope
+     * -----
+     * 
+     * A method is a task that an object of a class performs
+     * 
+     * We mark the domain of this task using curly braces: { }
+     * Everything within the curly braces is part of the task
+     * This domain is called the scope of a method
+     * 
+     * We can't access variables that are declared inside a method in code that is outside the scope of that method
+     * 
+     * Looking at the Car class again:
+     */
   }
 }

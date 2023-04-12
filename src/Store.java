@@ -9,16 +9,15 @@ public class Store {
   
   // advertise method
   public void advertise() {
-    System.out.println("Come spend some money!");
-    System.out.println("Selling " + productType + "!");
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
   }
   
   // main method
   public static void main(String[] args) {
-    Store lemonadeStand = new Store("Lemonade");
-
-    lemonadeStand.advertise();
-    lemonadeStand.advertise();
-    lemonadeStand.advertise();
+    String cookie = "Cookies";
+    Store cookieShop = new Store(cookie);
+    
+    cookieShop.advertise();
   }
 }

@@ -115,3 +115,57 @@ We now have a Store class with `advertise()` defined.
 Call the `advertise()` method on the `lemonadeStand` object in the `main()` method and see what the output is!
 
 Now, call the advertise() method on the lemonadeStand object two more times. It should be called in the main() method three times total.
+
+## Scope
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    String cookie = "Cookies";
+    Store cookieShop = new Store(cookie);
+    
+    cookieShop.advertise();
+  }
+}
+```
+
+Inside of the advertise() method, change the productType variable to the cookie variable, which is declared in the main() method. This should also result in the printout:
+
+```
+Selling cookies!
+```
+
+Right?
+
+No! We got an error! The cookie variable cannot be accessed inside of the advertise method. The scope is wrong! Change it back to productType:
+
+```
+String message = "Selling " + productType + "!";
+```
+
+Inside of the main() method, print the String message, which is declared in the advertise() method. This should print:
+
+```
+Selling Cookies!
+```
+
+Right?
+
+Foiled again! The message variable only exists inside the scope of the advertise() method!
+
+Delete the faulty print statement from the main() method.
