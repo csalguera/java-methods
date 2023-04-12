@@ -17,6 +17,15 @@ public class Car {
     System.out.println(message);
   }
 
+  public void startRadio(double stationNum, String stationName) {
+    System.out.println("Turning on the radio to " + stationNum + ", " + stationName + "!");
+    System.out.println("Enjoy!");
+  }
+
+  public void startRadio(double stationNum) {
+    System.out.println("Turning on the radio to " + stationNum + "!");
+  }
+
   public static void main(String[] args) {
     Car myFastCar = new Car("red");
 
@@ -25,6 +34,18 @@ public class Car {
     System.out.println("That was one fast car!");
 
     myFastCar.drive();
+
+    // 1st startRadio() method
+    myFastCar.startRadio(103.7, "Meditation Station");
+    // Output:
+    // Turning on the radio to 103.7, Meditation Station!
+    // Enjoy!
+
+    // 2nd startRadio() method
+    myFastCar.startRadio(98.2);
+    // Output:
+    // Turning on the radio to 98.2!
+
     /*
      * ---------------
      * Calling Methods
@@ -58,6 +79,18 @@ public class Car {
      * It only exists within the scope of the drive() method
      * 
      * However, milesDriven, which is declared at the top of the class, can be used inside all methods in the class, since it is in the scope of the whole class
+     * 
+     * -----------------
+     * Adding Parameters
+     * -----------------
+     * 
+     * In the Car class, we defined a method startRadio() with the parameters: stationNum and stationName
+     * stationNum is a double data type and stationName is a String data type
+     * 
+     * within the main() method, we call the startRadio() method on our myFastCar instance/object passing in 103.7 and "Meditation Station" as the arguments representing stationNum and stationName
+     * 
+     * Method overloading is when a Java program contains multiple methods with the same name
+     * each method must have different parameters
      */
   }
 }

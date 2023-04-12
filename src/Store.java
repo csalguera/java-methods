@@ -15,9 +15,7 @@ public class Store {
   
   // main method
   public static void main(String[] args) {
-    String cookie = "Cookies";
-    Store cookieShop = new Store(cookie);
+    Store lemonadeStand = new Store("Lemonade");
     
-    cookieShop.advertise();
   }
 }

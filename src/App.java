@@ -74,5 +74,15 @@ public class App {
      * 
      * Looking at the Car class again:
      */
+
+    /*
+     * -----------------
+     * Adding Parameters
+     * -----------------
+     * 
+     * A method's scope prevents us from using variables outside of the method they are declared in
+     * 
+     * Similar to how we add parameters to constructors, we can customize all other methods to accept parameters
+     */
   }
 }

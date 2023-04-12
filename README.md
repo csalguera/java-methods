@@ -169,3 +169,41 @@ Right?
 Foiled again! The message variable only exists inside the scope of the advertise() method!
 
 Delete the faulty print statement from the main() method.
+
+## Adding Parameters
+
+```
+public class Store {
+  // instance fields
+  String productType;
+  
+  // constructor method
+  public Store(String product) {
+    productType = product;
+  }
+  
+  // advertise method
+  public void advertise() {
+    String message = "Selling " + productType + "!";
+		System.out.println(message);
+  }
+  
+  // main method
+  public static void main(String[] args) {
+    Store lemonadeStand = new Store("Lemonade");
+    
+  }
+}
+```
+
+Add a method to the Store class called greetCustomer(). It should be accessible by other classes, and return no output. For now, have it take no parameters and leave the body of the method empty.
+
+Modify the greetCustomer() method so that it accepts a String parameter called customer.
+
+Inside of the greetCustomer() method, add a print statement to print:
+
+```
+"Welcome to the store, " + customer + "!"
+```
+
+Inside the main() method, call the greetCustomer() method on the lemonadeStand object. Pass in a String argument of your choice!
