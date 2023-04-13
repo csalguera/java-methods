@@ -15,10 +15,11 @@ public class Store {
     price = newPrice;
   }
   
+  // get price with tax method
+
   // main method
   public static void main(String[] args) {
     Store lemonadeStand = new Store("Lemonade", 3.75);
-    lemonadeStand.increasePrice(1.5);
-    System.out.println(lemonadeStand.price);
+
   }
 }

@@ -92,5 +92,16 @@ public class App {
      * 
      * For a Savings Account object, we would need two methods to deposit and withdraw
      */
+
+    /*
+     * -------
+     * Returns
+     * -------
+     * 
+     * Variables can only exist in the scope they were declared in
+     * To use the value outside of the methodit was created in, we must return it from the method
+     * 
+     * We use the keyword return to 'return' a value
+     */
   }
 }
