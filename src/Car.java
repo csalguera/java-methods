@@ -121,13 +121,28 @@ public class Car {
     // if the int variable numTires is printed, we would see the value 4
     System.out.println(numTires);
     // Output: 4
-  }
+    
+    /*
+    * Returning an object works differently from returning a primitive value
+    * When a primitive value is returned, a copy of the value is returned
+    * When an object is returned, a reference to the object is returned rather than a copy
+    */
 
-  /*
-   * Returning an object works differently from returning a primitive value
-   * When a primitive value is returned, a copy of the value is returned
-   * When an object is returned, a reference to the object is returned rather than a copy
-   */
+    /*
+     * ---------------------
+     * The toString() Method
+     * ---------------------
+     */
+
+    System.out.println(myFastCar);
+    // Output:
+    // This is a red car!
+  }
+    
+  public String toString() {
+    return "This is a " + color + " car!";
+    // Prints "This is a red car!"
+  }
 }
 
 // A second class is created

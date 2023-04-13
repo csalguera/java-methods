@@ -103,5 +103,17 @@ public class App {
      * 
      * We use the keyword return to 'return' a value
      */
+
+    /*
+     * ---------------------
+     * The toString() Method
+     * ---------------------
+     * 
+     * When printing Objects, we often see a String
+     * 
+     * We can add a method to our classes to print out more descriptively
+     * 
+     * When defining a toString() method, we can return a String that will print when we print the object
+     */
   }
 }
