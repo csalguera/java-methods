@@ -11,12 +11,14 @@ public class Store {
   
   // increase price method
   public void increasePrice(double priceToAdd){
-    
+    double newPrice = price + priceToAdd;
+    price = newPrice;
   }
   
   // main method
   public static void main(String[] args) {
     Store lemonadeStand = new Store("Lemonade", 3.75);
-    
+    lemonadeStand.increasePrice(1.5);
+    System.out.println(lemonadeStand.price);
   }
 }
