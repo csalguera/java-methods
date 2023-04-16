@@ -408,46 +408,45 @@ public class SavingsAccount {
 }
 ```
 
-Now that we’ve learned about behavior, we can apply behavior to our `SavingsAccount` class using methods!
+1. Now that we’ve learned about behavior, we can apply behavior to our `SavingsAccount` class using methods!
 
-We’ve added the functionality for each method inside `main()` now, but you will be rebuilding each above `main()`. Note that your methods can directly access the `balance` field.
+    We’ve added the functionality for each method inside `main()` now, but you will be rebuilding each above `main()`. Note that your methods can directly access the `balance` field.
 
-First, write a method called `checkBalance()` that prints:
+    First, write a method called `checkBalance()` that prints:
 
 ```
 Hello!
 Your balance is
 ```
 
-with the balance of the account displayed.
+    with the balance of the account displayed.
 
-It should take in no parameters and return nothing.
+    It should take in no parameters and return nothing.
 
-Now, write a method called deposit() that takes in an int parameter amountToDeposit and adds it to the balance. It should return nothing.
+2. Now, write a method called `deposit()` that takes in an `int` parameter `amountToDeposit` and adds it to the balance. It should return nothing.
 
-If you want, you can also have the method print:
+    If you want, you can also have the method print:
 
 ```
 You just deposited amountToDeposit
 ```
 
-with the value of amountToDeposit displayed.
+    with the value of `amountToDeposit` displayed.
 
-Now, write a method called withdraw() that takes in an int parameter amountToWithdraw and subtracts it from the balance. It should return the amountToWithdraw.
+3. Now, write a method called `withdraw()` that takes in an `int` parameter `amountToWithdraw` and subtracts it from the balance. It should return the `amountToWithdraw`.
 
-If you want, you can also have the method print:
+    If you want, you can also have the method print:
 
 ```
 You just withdrew amountToWithdraw
 ```
 
-with the value of amountToWithdraw displayed.
+    with the value of `amountToWithdraw` displayed.
 
-Test out your methods by trying to replace some of the code in the main() method with the equivalent methods!
+    Test out your methods by trying to replace some of the code in the `main()` method with the equivalent methods!
 
-Make sure to use checkBalance(), deposit(), and withdraw() at least once each.
+    Make sure to use `checkBalance()`, `deposit()`, and `withdraw()` at least once each.
 
-5.
-Congratulations! You’ve made a basic SavingsAccount.
+5. Congratulations! You’ve made a basic SavingsAccount.
 
-If you want, you can add more functionality to this! What other instance fields might you want to keep track of? What might a toString() look like for this class?
+    If you want, you can add more functionality to this! What other instance fields might you want to keep track of? What might a `toString()` look like for this class?
