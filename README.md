@@ -2,15 +2,15 @@
 
 ## Contents
 
-* Introduction
-* Defining Methods
-* Calling Methods
-* Scope
-* Adding Parameters
-* Reassigning Instance Fields
-* Returns
-* The toString() Method
-* Review
+* [Introduction](https://github.com/csalguera/java-methods#introduction)
+* [Defining Methods](https://github.com/csalguera/java-methods#defining-methods)
+* [Calling Methods](https://github.com/csalguera/java-methods#calling-methods)
+* [Scope](https://github.com/csalguera/java-methods#scope)
+* [Adding Parameters](https://github.com/csalguera/java-methods#adding-parameters)
+* [Reassigning Instance Fields](https://github.com/csalguera/java-methods#reassigning-instance-fields)
+* [Returns](https://github.com/csalguera/java-methods#returns)
+* [The toString() Method](https://github.com/csalguera/java-methods#the-tostring-method)
+* [Review](https://github.com/csalguera/java-methods#review)
 
 ## Introduction
 
