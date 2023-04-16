@@ -337,21 +337,21 @@ public class Store {
 }
 ```
 
-In the main() method, print the Objects lemonadeStand and cookieShop. Are these printouts helpful in understanding these Objects?
+1. In the `main()` method, print the Objects `lemonadeStand` and `cookieShop`. Are these printouts helpful in understanding these Objects?
 
-Create a toString() method for the Store class. The method signature should say that it is public, and that it returns a String. It shouldn’t take in any parameters. For now, have it return the String "Store".
+2. Create a `toString()` method for the `Store` class. The method signature should say that it is `public`, and that it returns a `String`. It shouldn’t take in any parameters. For now, have it return the `String` `Store`.
 
-"Store" isn’t very helpful! What kind of Store is it?
+3. `Store` isn’t very helpful! What kind of Store is it?
 
-Change the toString() to return a String that describes this Store object.
+    Change the `toString()` to return a `String` that describes this `Store` object.
 
-Your String should look like:
+    Your `String` should look like:
 
 ```
 This store sells <productType> at a price of <price>.
 ```
 
-where productType and price are the values in those instance fields. For example, if it was a hat store where hats cost 8, the String would say:
+&emsp;&emsp;where `productType` and `price` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the `String` would say:
 
 ```
 This store sells hats at a price of 8.
@@ -419,9 +419,9 @@ Hello!
 Your balance is
 ```
 
-    with the balance of the account displayed.
+&emsp;&emsp;with the balance of the account displayed.
 
-    It should take in no parameters and return nothing.
+&emsp;&emsp;It should take in no parameters and return nothing.
 
 2. Now, write a method called `deposit()` that takes in an `int` parameter `amountToDeposit` and adds it to the balance. It should return nothing.
 
@@ -441,9 +441,9 @@ You just deposited amountToDeposit
 You just withdrew amountToWithdraw
 ```
 
-    with the value of `amountToWithdraw` displayed.
+&emsp;&emsp;with the value of `amountToWithdraw` displayed.
 
-    Test out your methods by trying to replace some of the code in the `main()` method with the equivalent methods!
+4. Test out your methods by trying to replace some of the code in the `main()` method with the equivalent methods!
 
     Make sure to use `checkBalance()`, `deposit()`, and `withdraw()` at least once each.
 
