@@ -61,13 +61,13 @@ public class SavingsAccount {
 }
 ```
 
-We have made a SavingsAccount class without using any methods beyond `main()` and the constructor, SavingsAccount().
+1. We have made a SavingsAccount class without using any methods beyond `main()` and the constructor, `SavingsAccount()`.
 
-Run the code to see some account behavior happen.
+    Run the code to see some account behavior happen.
 
-Look at the main method! It’s so long! There is so much repeated code! Can you imagine how messy it would look if you needed to make 10 deposits?
+    Look at the main method! It’s so long! There is so much repeated code! Can you imagine how messy it would look if you needed to make 10 deposits?
 
-Throughout this lesson, we will learn how to make methods that would make checking the balance, depositing, and withdrawing all behavior that would take only one line of code.
+    Throughout this lesson, we will learn how to make methods that would make checking the balance, depositing, and withdrawing all behavior that would take only one line of code.
 
 ## Defining Methods
 
@@ -90,9 +90,21 @@ public class Store {
 }
 ```
 
-In between the constructor and the `main()` method, add a method called advertise() to the Store class. It should be accessible by other classes, and should have no output.
+1. In between the constructor and the `main()` method, add a method called `advertise()` to the `Store` class. It should be accessible by other classes, and should have no output.
 
-You can leave the body of the method empty.
+    You can leave the body of the method empty.
+
+2. Inside the `advertise()` method, type two print statements. They should result in the printouts:
+
+```
+"Come spend some money!"
+"Selling productType!"
+```
+
+*
+    where `productType` is replaced with the value in the variable `productType`.
+
+    However, we’re not going to see these Strings printed out yet! We’ll see in the next exercise how we can make these printouts actually run.
 
 ## Calling Methods
 
@@ -120,13 +132,13 @@ public class Store {
 }
 ```
 
-Last exercise, we defined a new method, `advertise()`, but we didn’t actually see it run.
+1. Last exercise, we defined a new method, `advertise()`, but we didn’t actually see it run.
 
-We now have a Store class with `advertise()` defined.
+    We now have a Store class with `advertise()` defined.
 
-Call the `advertise()` method on the `lemonadeStand` object in the ``main()`` method and see what the output is!
+    Call the `advertise()` method on the `lemonadeStand` object in the ``main()`` method and see what the output is!
 
-Now, call the advertise() method on the lemonadeStand object two more times. It should be called in the `main()` method three times total.
+2. Now, call the `advertise()` method on the `lemonadeStand` object two more times. It should be called in the `main()` method three times total.
 
 ## Scope
 
@@ -156,31 +168,33 @@ public class Store {
 }
 ```
 
-Inside of the advertise() method, change the productType variable to the cookie variable, which is declared in the `main()` method. This should also result in the printout:
+1. Inside of the `advertise()` method, change the `productType` variable to the `cookie` variable, which is declared in the `main()` method. This should also result in the printout:
 
 ```
 Selling cookies!
 ```
 
-Right?
+* 
+    Right?
 
-No! We got an error! The cookie variable cannot be accessed inside of the advertise method. The scope is wrong! Change it back to productType:
+2. No! We got an error! The `cookie` variable cannot be accessed inside of the advertise method. The scope is wrong! Change it back to `productType`:
 
 ```
 String message = "Selling " + productType + "!";
 ```
 
-Inside of the `main()` method, print the String message, which is declared in the advertise() method. This should print:
+3. Inside of the `main()` method, print the `String` `message`, which is declared in the `advertise()` method. This should print:
 
 ```
 Selling Cookies!
 ```
 
-Right?
+* 
+    Right?
 
-Foiled again! The message variable only exists inside the scope of the advertise() method!
+4. Foiled again! The `message` variable only exists inside the scope of the `advertise()` method!
 
-Delete the faulty print statement from the `main()` method.
+    Delete the faulty print statement from the `main()` method.
 
 ## Adding Parameters
 
@@ -208,17 +222,17 @@ public class Store {
 }
 ```
 
-Add a method to the Store class called greetCustomer(). It should be accessible by other classes, and return no output. For now, have it take no parameters and leave the body of the method empty.
+1. Add a method to the Store class called `greetCustomer()`. It should be accessible by other classes, and return no output. For now, have it take no parameters and leave the body of the method empty.
 
-Modify the greetCustomer() method so that it accepts a String parameter called customer.
+2. Modify the `greetCustomer()` method so that it accepts a `String` parameter called `customer`.
 
-Inside of the greetCustomer() method, add a print statement to print:
+3. Inside of the `greetCustomer()` method, add a print statement to print:
 
 ```
 "Welcome to the store, " + customer + "!"
 ```
 
-Inside the `main()` method, call the greetCustomer() method on the lemonadeStand object. Pass in a String argument of your choice!
+4. Inside the `main()` method, call the `greetCustomer()` method on the `lemonadeStand` object. Pass in a `String` argument of your choice!
 
 ## Reassigning Instance Fields
 
@@ -247,15 +261,15 @@ public class Store {
 }
 ```
 
-We have added a `price` instance field to the Store class.
+1. We have added a `price` instance field to the Store class.
 
-However, to combat inflation costs, we’ve found ourselves increasing the price of our product over and over. We’ve added an empty `increasePrice()` method to the Store class. It takes a `double` parameter `priceToAdd`.
+    However, to combat inflation costs, we’ve found ourselves increasing the price of our product over and over. We’ve added an empty `increasePrice()` method to the Store class. It takes a `double` parameter `priceToAdd`.
 
-Inside of the `increasePrice()` method, create a variable called `newPrice`. Declare it to be a `double`, and set it equal to the `price` plus the `priceToAdd`.
+    Inside of the `increasePrice()` method, create a variable called `newPrice`. Declare it to be a `double`, and set it equal to the `price` plus the `priceToAdd`.
 
-Inside of increasePrice(), set the instance field price to be newPrice!
+2. Inside of `increasePrice()`, set the instance field `price` to be `newPrice`!
 
-In the `main()` method, increase the price at the lemonade stand by 1.5. Then, print the lemonadeStand.price to see how it has changed!
+3. In the `main()` method, increase the price at the lemonade stand by `1.5`. Then, print the `lemonadeStand.price` to see how it has changed!
 
 ## Returns
 
@@ -351,13 +365,15 @@ public class Store {
 This store sells <productType> at a price of <price>.
 ```
 
-&emsp;&emsp;where `productType` and `price` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the `String` would say:
+* 
+    where `productType` and `price` are the values in those instance fields. For example, if it was a hat store where hats cost 8, the `String` would say:
 
 ```
 This store sells hats at a price of 8.
 ```
 
-Look at the printouts again. Are they more helpful now?
+* 
+    Look at the printouts again. Are they more helpful now?
 
 ## Review
 
@@ -419,9 +435,11 @@ Hello!
 Your balance is
 ```
 
-&emsp;&emsp;with the balance of the account displayed.
+*
+    with the balance of the account displayed.
 
-&emsp;&emsp;It should take in no parameters and return nothing.
+*
+    It should take in no parameters and return nothing.
 
 2. Now, write a method called `deposit()` that takes in an `int` parameter `amountToDeposit` and adds it to the balance. It should return nothing.
 
@@ -441,7 +459,8 @@ You just deposited amountToDeposit
 You just withdrew amountToWithdraw
 ```
 
-&emsp;&emsp;with the value of `amountToWithdraw` displayed.
+*
+    with the value of `amountToWithdraw` displayed.
 
 4. Test out your methods by trying to replace some of the code in the `main()` method with the equivalent methods!
 
