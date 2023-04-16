@@ -61,7 +61,7 @@ public class SavingsAccount {
 }
 ```
 
-We have made a SavingsAccount class without using any methods beyond main() and the constructor, SavingsAccount().
+We have made a SavingsAccount class without using any methods beyond `main()` and the constructor, SavingsAccount().
 
 Run the code to see some account behavior happen.
 
@@ -90,7 +90,7 @@ public class Store {
 }
 ```
 
-In between the constructor and the main() method, add a method called advertise() to the Store class. It should be accessible by other classes, and should have no output.
+In between the constructor and the `main()` method, add a method called advertise() to the Store class. It should be accessible by other classes, and should have no output.
 
 You can leave the body of the method empty.
 
@@ -124,9 +124,9 @@ Last exercise, we defined a new method, `advertise()`, but we didn’t actually 
 
 We now have a Store class with `advertise()` defined.
 
-Call the `advertise()` method on the `lemonadeStand` object in the `main()` method and see what the output is!
+Call the `advertise()` method on the `lemonadeStand` object in the ``main()`` method and see what the output is!
 
-Now, call the advertise() method on the lemonadeStand object two more times. It should be called in the main() method three times total.
+Now, call the advertise() method on the lemonadeStand object two more times. It should be called in the `main()` method three times total.
 
 ## Scope
 
@@ -156,7 +156,7 @@ public class Store {
 }
 ```
 
-Inside of the advertise() method, change the productType variable to the cookie variable, which is declared in the main() method. This should also result in the printout:
+Inside of the advertise() method, change the productType variable to the cookie variable, which is declared in the `main()` method. This should also result in the printout:
 
 ```
 Selling cookies!
@@ -170,7 +170,7 @@ No! We got an error! The cookie variable cannot be accessed inside of the advert
 String message = "Selling " + productType + "!";
 ```
 
-Inside of the main() method, print the String message, which is declared in the advertise() method. This should print:
+Inside of the `main()` method, print the String message, which is declared in the advertise() method. This should print:
 
 ```
 Selling Cookies!
@@ -180,7 +180,7 @@ Right?
 
 Foiled again! The message variable only exists inside the scope of the advertise() method!
 
-Delete the faulty print statement from the main() method.
+Delete the faulty print statement from the `main()` method.
 
 ## Adding Parameters
 
@@ -218,7 +218,7 @@ Inside of the greetCustomer() method, add a print statement to print:
 "Welcome to the store, " + customer + "!"
 ```
 
-Inside the main() method, call the greetCustomer() method on the lemonadeStand object. Pass in a String argument of your choice!
+Inside the `main()` method, call the greetCustomer() method on the lemonadeStand object. Pass in a String argument of your choice!
 
 ## Reassigning Instance Fields
 
@@ -255,7 +255,7 @@ Inside of the `increasePrice()` method, create a variable called `newPrice`. Dec
 
 Inside of increasePrice(), set the instance field price to be newPrice!
 
-In the main() method, increase the price at the lemonade stand by 1.5. Then, print the lemonadeStand.price to see how it has changed!
+In the `main()` method, increase the price at the lemonade stand by 1.5. Then, print the lemonadeStand.price to see how it has changed!
 
 ## Returns
 
@@ -287,19 +287,19 @@ public class Store {
 }
 ```
 
-We want to have a method that returns the price plus tax.
+1. We want to have a method that returns the price plus tax.
 
-Define a method called getPriceWithTax() that is intended to return the price plus the tax. It should take in no parameters and return a double.
+    Define a method called `getPriceWithTax()` that is intended to return the price plus the tax. It should take in no parameters and return a `double`.
 
-You can leave the body of the method empty for now. Note: the code will have an error until we return the correct type from the method, which we will do in the next step.
+    You can leave the body of the method empty for now. **Note:** the code will have an error until we return the correct type from the method, which we will do in the next step.
 
-Inside the getPriceWithTax() method, create a double variable totalPrice that is equal to price + price * 0.08. 0.08 is the tax applied to the price.
+2. Inside the `getPriceWithTax()` method, create a `double` variable `totalPrice` that is equal to `price + price * 0.08`. `0.08` is the tax applied to the price.
 
-Then, return totalPrice.
+    Then, return `totalPrice`.
 
-Inside of main(), set a double variable lemonadePrice to the value returned by lemonadeStand.getPriceWithTax().
+3. Inside of `main()`, set a `double` variable `lemonadePrice` to the value returned by `lemonadeStand.getPriceWithTax()`.
 
-Now, print out lemonadePrice.
+    Now, print out `lemonadePrice`.
 
 ## The toString() Method
 
