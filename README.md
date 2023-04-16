@@ -1,5 +1,17 @@
 ## Java Methods
 
+## Contents
+
+* Introduction
+* Defining Methods
+* Calling Methods
+* Scope
+* Adding Parameters
+* Reassigning Instance Fields
+* Returns
+* The toString() Method
+* Review
+
 ## Introduction
 
 ```
